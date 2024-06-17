@@ -74,7 +74,7 @@ pipeline{
         stage('Jfrog Artifact Upload') {
             steps {
               rtUpload (
-                serverId: 'artifactory',
+                serverId: 'jfrog-artifactory',
                 spec: '''{
                       "files": [
                         {
